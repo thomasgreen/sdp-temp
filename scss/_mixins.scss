@@ -9,10 +9,11 @@
 
 // Font Mixins
 @mixin body-font {
-  font-family: 'Source Sans Pro';
-  font-weight: 300;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
 }
 @mixin heading-font {
-  font-family: 'Merriweather';
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
