@@ -1,9 +1,11 @@
 // Global styling for this theme
 
 html {
+  min-height: 100vh;
 }
 
 body {
+  min-height: 100vh;
   position: relative;
   @include body-font;
 }
@@ -29,10 +31,8 @@ video {
   z-index: 0;
 }
 
-@media (pointer: coarse) and (hover: none) {
-  .masthead {
-    height: 100vh;
-  }
+.masthead {
+  min-height: 100vh;
 }
 
 .overlay {

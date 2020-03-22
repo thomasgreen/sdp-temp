@@ -5,7 +5,12 @@
  */
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+html {
+  min-height: 100vh;
+}
+
 body {
+  min-height: 100vh;
   position: relative;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
@@ -33,10 +38,8 @@ video {
   z-index: 0;
 }
 
-@media (pointer: coarse) and (hover: none) {
-  .masthead {
-    height: 100vh;
-  }
+.masthead {
+  min-height: 100vh;
 }
 
 .overlay {
@@ -61,6 +64,7 @@ video {
   position: relative;
   padding-bottom: 3rem;
   z-index: 2;
+  min-height: 100vh;
 }
 
 .masthead .masthead-bg {
@@ -70,10 +74,14 @@ video {
   right: 0;
   left: 0;
   width: 100%;
-  min-height: 35rem;
+  min-height: 100vh;
   height: 100%;
   background-color: #31505c;
   transform-origin: bottom right;
+}
+
+.masthead .masthead-content {
+  min-height: 100vh;
 }
 
 .masthead .masthead-content h1 {
